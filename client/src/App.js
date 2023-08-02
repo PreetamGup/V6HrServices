@@ -13,7 +13,7 @@ const App = () => {
 
   const fetchPhotos = async () => {
     try {
-      const response = await axios.get(`/api/image?page=${currentPage}`);
+      const response = await axios.get(`https://v6hrservices.onrender.com/api/image?page=${currentPage}`);
     
       setPhotos(response.data.image);
       setTotalPage(response.data.totalPages)
